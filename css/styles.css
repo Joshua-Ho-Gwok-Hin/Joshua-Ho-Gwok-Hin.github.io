@@ -1,3 +1,13 @@
+/* Joshua reset - START */
+* {
+    /* box-sizing: border-box; */
+}
+
+html {
+    /* font-size: 16px; */
+}
+/* Joshua reset - END */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,16 +15,74 @@ body {
 
 /* header section - START */
 
-/* header section - END */
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    top: 0px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+}
 
+nav {
+    float: right;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sitenav {
+    display: flex;
+    align-items: right;
+    list-style: none;
+    float: left;
+    text-align: left;
+}
+
+.sitenav li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    padding-right: 16px;
+}
+
+.sitenav li a:hover {
+    color: rgba(31, 0, 115, .7);
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    float: left;
+}
+
+.logo_txt_colmar, .logo_txt_academy {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .5);
+
+}
+
+.logo_txt_colmar {
+    font-weight: bold;
+    color: rgba(0, 0, 0, .7);
+}
+
+/* header section - END */
+h1 {
+    color: red;
+}
 
 /* main section - START */
 
-    /* topbanner */
+/* topbanner */
 
-    /* midbanner */
+/* midbanner */
 
-    /* bottom banner */
+/* bottom banner */
 
 /* main section - END */
 
