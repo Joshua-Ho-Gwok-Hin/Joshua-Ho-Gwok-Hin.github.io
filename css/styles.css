@@ -96,8 +96,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 0 0 .75vw 0;
-
+    padding: 0 0 1vw 0;
 }
 
 .my-flex-item-inside {
@@ -111,18 +110,41 @@ html {
         width: 3.3vw;
         height: 3.3vw;
     }
+    .my-flex-row-container {
+        padding: 0 0 .6vw 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .my-flex-item-inside {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .my-flex-row-container {
+        padding: 0 0 .5vw 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .my-flex-item-inside {
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+    .my-flex-row-container {
+        padding: 0 0 .3vw 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .my-flex-item-inside {
-        width: 3vw;
-        height: 3vw;
+        width: 2.4vw;
+        height: 2.4vw;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     .my-flex-item-inside {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 1.5vw;
+        height: 1.5vw;
     }
 }
