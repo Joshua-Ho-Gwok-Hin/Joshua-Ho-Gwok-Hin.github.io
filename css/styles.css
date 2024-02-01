@@ -3,148 +3,38 @@ html {
     font-family: 'Roboto', sans-serif !important;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.carbon-fibre {
+    background-color: black;
+    background-image: url(/images/diamond_swatch_dark.png);
+    background-size: 20px;
+    background-repeat: repeat;
+}
+
 .container-1200 {
     max-width: 1200px;
 }
 
-/* Find The Hat Game */
-#game-field {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    background-color: aliceblue;
-    z-index: 0;
+.console-font {
+    font-family: monospace;
 }
 
-.paw-prints {
-    background-image: url(/images/find-the-hat/paw-print.png);
+.download-btn {
+    border: 1px solid #0dcaf0;
+    border-radius: 8px;
+    padding: 3px 10px;
+    color: #0dcaf0;
 }
 
-.game-console-top {
-    padding: 10px 10px 5px 10px;
-    border: 1px solid black;
-    border-bottom: none;
-    border-radius: 50px 50px 0 0 ;
-    text-align: center;
-    vertical-align: middle;
-    background-color: aliceblue;
-}
-
-.triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-}
-
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
-}
-
-.triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid #555;
-	border-bottom: 25px solid transparent;
-}
-
-.triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-left: 50px solid #555;
-	border-bottom: 25px solid transparent;
-}
-
-.game-console-bottom {
-    padding: 10px 10px 5px 10px;
-    border: 1px solid black;
-    border-top: none;
-    border-radius: 0 0 50px 50px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: aliceblue;
-}
-
-.controller-table {
-    width: 100%;
-}
-
-.controller-table td {
-    padding: 20px;
-}
-
-.my-flex-container {
-    border: 1px solid blue;
-    border-radius: 10px;
-    margin:0 10px 10px;
-    padding: 10px 10px 5px 10px;
+footer {
+    padding: 0 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-image: url(/images/find-the-hat/background-earth-brown.png);
-}
-
-.my-flex-row-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 0 1vw 0;
-}
-
-.my-flex-item-inside {
-    background-color: rgba(55, 55, 55, .5);
-    width: 7.5vw;
-    height: 7.5vw;
-}
-
-@media only screen and (min-width: 576px) {
-    .my-flex-item-inside {
-        width: 3.3vw;
-        height: 3.3vw;
-    }
-    .my-flex-row-container {
-        padding: 0 0 .6vw 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .my-flex-item-inside {
-        width: 3.5vw;
-        height: 3.5vw;
-    }
-    .my-flex-row-container {
-        padding: 0 0 .5vw 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .my-flex-item-inside {
-        width: 3.3vw;
-        height: 3.3vw;
-    }
-    .my-flex-row-container {
-        padding: 0 0 .3vw 0;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .my-flex-item-inside {
-        width: 2.4vw;
-        height: 2.4vw;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .my-flex-item-inside {
-        width: 1.5vw;
-        height: 1.5vw;
-    }
+    align-items: center;
+    margin-top: auto;
+    height: 80px;
 }
