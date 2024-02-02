@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: black;
-    margin-top: 60px;
+    margin-top: 62px;
 }
 
 /****************************/
@@ -42,12 +42,12 @@ nav {
 }
 
 .grey-font {
-    color: #6c757d;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 #about:hover .grey-font, #works:hover .grey-font,
 #docs:hover .grey-font, #misc:hover .grey-font {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #about:hover, #works:hover,
@@ -76,7 +76,15 @@ nav {
 /****************************/
 
 .page-content {
-    max-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto 84px;
+    padding: 0 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.border-right {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(13, 202, 240, 0.1);
 }
 
 .carbon-fibre {
@@ -91,8 +99,7 @@ nav {
 /****************************/
 
 footer {
-    /* margin-top: auto; */
-    height: 82px;
+    height: 84px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -101,10 +108,10 @@ footer {
 
 .status-bar {
     display: flex;
-    color: grey;
+    color: rgba(255, 255, 255, 0.55);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.05);
-    height: 22px;
+    height: 24px;
     font-size: small;
     padding: 0 20px;
 }
