@@ -17,11 +17,11 @@
     <nav class="navbar navbar-expand-lg bg-dark fixed-top p-2 text-info">
         <div class="container-fluid">
 
-            <a class="navbar-brand text-info console-font" href="index.html">
-                <span class="text-white">&lt;/&gt;</span>
-                <span class="ms-3">Joshua Ho Gwok Hin</span>
+            <a id="title-logo-text" class="navbar-brand text-info console-font" href="index.html">
+                <span class="logo-bold">&lt;/&gt;</span>
+                <span class="ms-3 justify-content-center">Joshua Ho Gwok Hin</span>
             </a>
-            <button class="navbar-toggler bg-info border-white" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler bg-warning border-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -29,16 +29,20 @@
             <div class="collapse navbar-collapse bg-opacity-20" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item pt-1">
-                        <a class="nav-link active console-font text-info ms-3" aria-current="page" href="#"><span
-                                class="console-font text-secondary">01. </span>About</a>
+                        <a id="about" class="nav-link active console-font text-info ms-3" aria-current="page"
+                            href="#about"><span class="console-font grey-font">01. </span>About</a>
                     </li>
                     <li class="nav-item pt-1">
-                        <a class="nav-link active console-font text-info ms-3" aria-current="page" href="#"><span
-                                class="console-font text-secondary">02. </span>Works</a>
+                        <a id="works" class="nav-link active console-font text-info ms-3" aria-current="page" href="#works"><span
+                                class="console-font grey-font">02. </span>Works</a>
                     </li>
                     <li class="nav-item pt-1">
-                        <a class="nav-link active console-font text-info ms-3" aria-current="page" href="#"><span
-                                class="console-font text-secondary">03. </span>Docs</a>
+                        <a id="docs" class="nav-link active console-font text-info ms-3" aria-current="page"
+                            href="#documentation"><span class="console-font grey-font">03. </span>Docs</a>
+                    </li>
+                    <li class="nav-item pt-1">
+                        <a id="misc" class="nav-link active console-font text-info ms-3" aria-current="page"
+                            href="#miscellaneous"><span class="console-font grey-font">04. </span>Misc</a>
                     </li>
                     <li class="nav-item download-btn ms-3">
                         <a class="nav-link active console-font text-info" aria-current="page" href="#">Resume</a>
@@ -55,27 +59,26 @@
     <h1>hello</h1>
 
     <footer>
-        <div class="status-bar">
-            <div>
+        <div class="row status-bar">
+            <div class="col-2 d-none d-sm-block">
                 Status:
             </div>
-            <div class="margin-left-auto"> 
-                <span>UTF-8</span>&ThickSpace; &ThickSpace;
+            <div class="col d-flex justify-content-center justify-content-sm-end">
+                <span class="">UTF-8</span>&ThickSpace; &ThickSpace;
                 <span><i class="bi bi-filetype-html"></i> HTML</span>&ThickSpace; &ThickSpace;
                 <span><i class="bi bi-filetype-css"></i> CSS</span>&ThickSpace; &ThickSpace;
                 <span><i class="bi bi-filetype-js"></i> JavaScript</span>&ThickSpace; &ThickSpace;
-                <span><i class="bi bi-bootstrap"></i> Bootstrap v5.3.2</span>
+                <span><i class="bi bi-bootstrap"></i> Bootstrap <span
+                        class="d-none d-sm-inline-block">v5.3.2</span></span>
             </div>
-
         </div>
 
-        <div class="footer-bar">
+        <div class="footer-bar d-flex justify-content-center justify-content-md-start">
             <span class="text-secondary">Follow me on</span>&MediumSpace;
             <span class="text-info">Social</span><span class="text-white">Media</span> &ThickSpace; &ThickSpace;
             <i class="bi bi-linkedin"></i> &ThickSpace; &ThickSpace;
             <i class="bi bi-github text-white"></i> &ThickSpace; &ThickSpace;
             <i class="bi bi-youtube"></i> &ThickSpace; &ThickSpace;
-
         </div>
     </footer>
 

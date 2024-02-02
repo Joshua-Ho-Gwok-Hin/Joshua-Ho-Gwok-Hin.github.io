@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    background-color: black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,6 +12,37 @@ body {
 
 nav {
     font-family: monospace;
+}
+
+.logo-bold {
+    font-weight:900;
+    color: #6c757d;
+}
+
+#title-logo-text:hover .logo-bold {
+    color: white;
+}
+
+#title-logo-text:hover {
+    font-weight: bold;
+}
+
+.grey-font {
+    color: #6c757d;
+}
+
+#about:hover .grey-font,
+#works:hover .grey-font,
+#docs:hover .grey-font,
+#misc:hover .grey-font{
+    color: white;
+}
+
+#about:hover,
+#works:hover,
+#docs:hover,
+#misc:hover {
+    font-weight: bold;
 }
 
 .carbon-fibre {
@@ -24,7 +56,6 @@ nav {
     max-width: 1200px;
 }
 
-
 .download-btn {
     border: 1px solid #0dcaf0;
     border-radius: 8px;
@@ -33,9 +64,17 @@ nav {
     margin:2px 0;
 }
 
+.download-btn:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+
 footer {
-    margin-top: auto;
-    height: 83px;
+    /* margin-top: auto; */
+    height: 82px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-bar {
@@ -54,10 +93,6 @@ footer {
     height: 22px;
     font-size: small;
     padding: 0 20px;
-}
-
-.margin-left-auto {
-    margin-left: auto;
 }
 
 .bi-linkedin{
