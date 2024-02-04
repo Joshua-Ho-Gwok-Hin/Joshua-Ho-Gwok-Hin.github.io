@@ -8,16 +8,22 @@ html {
 
 body {
     background-color: black;
-    margin-top: 62px;
+    margin-top: 55px;
+}
+
+.console-font {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+}
+
+h1, h2, h3, h4, h5, h6,
+ p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: roboto;
 }
 
 /****************************/
 /*** navbar section start ***/
 /****************************/
-
-nav {
-    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
-}
 
 .nav-link-text {
     color: rgba(13, 202, 240, 0.9) !important;  
@@ -26,6 +32,14 @@ nav {
 .nav-link-text:hover {
     color: rgba(13, 202, 240, 1) !important;
     font-weight: bold;
+}
+
+.grey-font {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-link-text:hover .grey-font {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .logo-bold {
@@ -41,57 +55,19 @@ nav {
     font-weight: bold;
 }
 
-.grey-font {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-#about:hover .grey-font, #works:hover .grey-font,
-#docs:hover .grey-font, #misc:hover .grey-font {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#about:hover, #works:hover,
-#docs:hover, #misc:hover {
-    font-weight: bold;
-}
-
 .download-btn {
     border: 1px solid rgba(13, 202, 240, 0.8);
     border-radius: 8px;
-    /* color: #0dcaf0; */
     color: rgba(13, 202, 240, 0.8);
     width: auto;
     text-align: center;
-    padding: 1px 10px;
+    padding: 3px 10px;
 }
 
 .download-btn:hover {
     background-color: rgba(0, 0, 0, 0.05);
     font-weight: bold;
     border: 1px solid rgba(13, 202, 240, 1);
-}
-
-/****************************/
-/**** content area start ****/
-/****************************/
-
-.page-content {
-    max-width: 1400px;
-    margin: 0 auto 84px;
-    padding: 0 18px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.border-right {
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(13, 202, 240, 0.1);
-}
-
-.carbon-fibre {
-    background-color: black;
-    background-image: url(/images/diamond_swatch_dark.png);
-    background-size: 20px;
-    background-repeat: repeat;
 }
 
 /****************************/
@@ -138,4 +114,85 @@ footer {
 
 .bi-music-note-beamed {
     color: gray;
+}
+
+/****************************/
+/**** content area start ****/
+/****************************/
+
+.page-content {
+    max-width: 1400px;
+    margin: 0 auto 84px;
+    padding: 0 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.border-left {
+    border-left: 2px solid rgba(13, 202, 240, 0.3);
+}
+
+#about {
+    height: calc(100vh - 139px);
+    background-color: rgba(255, 255, 255, 0.08);
+    align-items: center;
+}
+
+.jumbotron {
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.break-height {
+    line-height: calc(100vh * .05);
+}
+
+.big-smile {
+    font-size: 3rem;
+    /* text-align: center; */
+}
+
+.welcome {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+}
+
+.stack-display {
+    font-size: 5rem;
+}
+
+.bi-filetype-html {
+    color: orange;
+}
+
+.bi-filetype-css {
+    color: deepskyblue;
+}
+
+.bi-filetype-js {
+    color: yellow;
+}
+
+.bi-filetype-java {
+    color: tomato;
+}
+
+.bi-filetype-sql {
+    color: mediumseagreen;
+};
+
+.side-links li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.side-links li {
+    list-style-type: none;
+}
+
+.carbon-fibre {
+    background-color: black;
+    background-image: url(/images/diamond_swatch_dark.png);
+    background-size: 20px;
+    background-repeat: repeat;
 }

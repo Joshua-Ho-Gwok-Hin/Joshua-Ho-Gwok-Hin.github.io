@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-black main">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-2" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-2 console-font" data-bs-theme="dark">
         <div class="container-fluid">
 
             <a id="title-logo-text" class="navbar-brand text-info" href="index.html">
@@ -28,22 +28,22 @@
             <div class="collapse navbar-collapse bg-opacity-20" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item pt-1">
-                        <a id="about" class="nav-link active nav-link-text ms-3" aria-current="page" href="#about">
+                        <a class="nav-link active nav-link-text ms-3" aria-current="page" href="#about">
                             <span class="grey-font">01. </span>About</a>
                     </li>
                     <li class="nav-item pt-1">
-                        <a id="works" class="nav-link active nav-link-text ms-3" aria-current="page" href="#works"><span
+                        <a class="nav-link active nav-link-text ms-3" aria-current="page" href="#works"><span
                                 class="grey-font">02. </span>Works</a>
                     </li>
                     <li class="nav-item pt-1">
-                        <a id="docs" class="nav-link active nav-link-text ms-3" aria-current="page"
-                            href="#documentation"><span class="grey-font">03. </span>Docs</a>
+                        <a class="nav-link active nav-link-text ms-3" aria-current="page" href="#documentation"><span
+                                class="grey-font">03. </span>Docs</a>
                     </li>
                     <li class="nav-item pt-1">
-                        <a id="misc" class="nav-link active nav-link-text ms-3" aria-current="page"
-                            href="#miscellaneous"><span class="grey-font">04. </span>Misc</a>
+                        <a class="nav-link active nav-link-text ms-3" aria-current="page" href="#miscellaneous"><span
+                                class="grey-font">04. </span>Misc</a>
                     </li>
-                    <li class="nav-item download-btn ms-3">
+                    <li class="nav-item download-btn mx-3 me-lg-0">
                         <a class="nav-link active nav-link-text ps-lg-2" aria-current="page"
                             href="/resource/resume/Joshua Ho Gwok Hin.pdf" download>Resume <span
                                 class="d-md-inline-block d-lg-none "><i class="bi bi-file-pdf"></i> Download</span></a>
@@ -55,7 +55,42 @@
 
     <section class="page-content">
 
-        <div class="row">
+        <div id="about" class="row">
+
+            <div class="col-3 border-right ps-3">
+                <h3>Quick start:</h3>
+                <br class="break-height" />
+                <ul class="side-links">
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/works">Sample works</a></li>
+                    <li><a href="/documentation">Paperwork</a></li>
+                    <li><a href="/miscellaneous">Hobbies</a></li>
+                </ul>
+
+            </div>
+            <div class="col ps-4 border-left">
+                <p class="welcome text-info"> HELLO & WELCOME!</p>
+                                <p class="big-smile text-warning"><i class="bi bi-emoji-smile-fill"></i></p>
+
+                <!-- <br class="break-height" /> -->
+
+                <p class="text-info console-font">My name is</p>
+                <h1 class="display-5 jumbotron">Joshua Ho <span class="d-none d-md-inline-block">Gwok Hin</span>.</h1>
+                <h2>I design and build content for the web.</h2>
+                <br class="break-height" />
+
+                <section class="stack-display">
+                    <i class="bi bi-filetype-html" title="HyperText Markup Language"></i>
+                    <i class="bi bi-filetype-css" title="Cascading Style Sheets"></i>
+                    <i class="bi bi-filetype-js " title="JavaScript"></i>
+                    <i class="bi bi-filetype-java" title="Java"></i>
+                    <i class="bi bi-filetype-sql" title="Structured Query Language"></i>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="works" class="row ">
             <div class="col-3 border-right">
                 <h1>hello</h1>
                 <ul>
@@ -65,16 +100,21 @@
                     <li>four</li>
                     <li>five</li>
                 </ul>
-                
+
             </div>
             <div class="col">
-                <h1 class="text-secondary">Website is under construction... </h1>
+                <p class="text-info ps-3">Hi, my name is</p>
+                <h1 class="text-secondary ps-4">Next Next Next</h1>
                 <h2 class="text-secondary">Please come back later. Thank you</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam libero maxime quam! Commodi nemo, deleniti doloribus rem itaque incidunt adipisci explicabo impedit, ipsum voluptate mollitia dolore placeat excepturi totam. Magni hic, ex provident, cupiditate commodi eos possimus sequi, aliquid incidunt autem facilis? Quia vero deleniti tempore? Commodi, modi veniam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam libero maxime quam! Commodi nemo, deleniti doloribus rem itaque incidunt adipisci explicabo impedit, ipsum voluptate mollitia dolore placeat excepturi totam. Magni hic, ex provident, cupiditate commodi eos possimus sequi, aliquid incidunt autem facilis? Quia vero deleniti tempore? Commodi, modi veniam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam libero maxime quam!
+                    Commodi nemo, deleniti doloribus rem itaque incidunt adipisci explicabo impedit, ipsum voluptate
+                    mollitia dolore placeat excepturi totam. Magni hic, ex provident, cupiditate commodi eos possimus
+                    sequi, aliquid incidunt autem facilis? Quia vero deleniti tempore? Commodi, modi veniam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam libero maxime quam!
+                    Commodi nemo, deleniti doloribus rem itaque incidunt adipisci explicabo impedit, ipsum voluptate
+                    mollitia dolore placeat excepturi totam. Magni hic, ex provident, cupiditate commodi eos possimus
+                    sequi, aliquid incidunt autem facilis? Quia vero deleniti tempore? Commodi, modi veniam?</p>
             </div>
-
-
         </div>
 
     </section>
