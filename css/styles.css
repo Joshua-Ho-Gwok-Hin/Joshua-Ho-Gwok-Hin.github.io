@@ -131,7 +131,7 @@ footer {
     border-left: 2px solid rgba(13, 202, 240, 0.3);
 }
 
-#about {
+.about {
     height: calc(100vh - 139px);
     background-color: rgba(255, 255, 255, 0.08);
     align-items: center;
@@ -143,7 +143,7 @@ footer {
 }
 
 .break-height {
-    line-height: calc(100vh * .05);
+    line-height: calc(100vh * .03);
 }
 
 .big-smile {
@@ -157,8 +157,10 @@ footer {
     font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
 }
 
-.stack-display {
-    font-size: 5rem;
+
+.stack-display img{
+    height: 65px;
+    width: auto;
 }
 
 .bi-filetype-html {
@@ -166,11 +168,15 @@ footer {
 }
 
 .bi-filetype-css {
-    color: deepskyblue;
+    color: darkturquoise;
 }
 
 .bi-filetype-js {
     color: yellow;
+}
+
+.bi-filetype-tsx {
+    color: deepskyblue;
 }
 
 .bi-filetype-java {
