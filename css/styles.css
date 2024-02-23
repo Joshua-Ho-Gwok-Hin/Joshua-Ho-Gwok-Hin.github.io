@@ -87,7 +87,7 @@ footer {
     color: rgba(255, 255, 255, 0.55);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.05);
-    height: 24px;
+    height: 22px;
     font-size: small;
     padding: 0 20px;
 }
@@ -122,19 +122,20 @@ footer {
 
 .page-content {
     max-width: 1400px;
-    margin: 0 auto 84px;
-    padding: 0 18px;
-    color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+
 }
 
 .border-left {
     border-left: 2px solid rgba(13, 202, 240, 0.3);
 }
 
-.about {
-    height: calc(100vh - 139px);
+#about {
+    height: calc(100vh - 137px);
     background-color: rgba(255, 255, 255, 0.08);
     align-items: center;
+    margin: 0 auto 84px;
+    padding: 0 18px;
 }
 
 .jumbotron {
@@ -143,12 +144,7 @@ footer {
 }
 
 .break-height {
-    line-height: calc(100vh * .03);
-}
-
-.big-smile {
-    font-size: 3rem;
-    /* text-align: center; */
+    line-height: calc(100vh * .05);
 }
 
 .welcome {
@@ -157,9 +153,8 @@ footer {
     font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
 }
 
-
-.stack-display img{
-    height: 65px;
+.stack-display img {
+    height: 60px;
     width: auto;
 }
 
