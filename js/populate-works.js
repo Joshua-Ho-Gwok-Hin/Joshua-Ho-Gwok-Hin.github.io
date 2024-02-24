@@ -1,32 +1,66 @@
-import Work from './work.js';
+import { works } from './work.js';
 
-let testingwork = document.getElementById('testworks');
-testingwork.innerHTML = `<h1 class="text-white">JS is working</h1>`;
+const populateworks = (inputArray) => {
 
-let works = [];
+    let displayArray = document.getElementById('works');
 
-let findYourHat = new Work("Find Your Hat (Node.js Game)",
-    "/images/works/8bjchl.gif",
-    "<p>This node.js game is an assignment of a school project of SCTP with Generation.sg and Temasek Poly. This JavaScript programming foundation assignment allows me to demonstrate my creativity and sense of beauty.</p>",
-    ["JavaScript"],
-    ["node.js"],
-    [{ replit: "https://replit.com/@Joshua-Ho-Gwok/Find-your-hat#138ee1e2-fda9-4683-9d2a-5e7ae201341a" },
-    { github: "https://github.com/Joshua-Ho-Gwok-Hin/EDU-SCTP-TEMASEK-POLY/tree/b04fe847439da296e9aa4a4549646502c4ff5f94/ASSESSMENT%20-%20JavaScript%20-%20Find%20Your%20Hat%20Game" }]);
+    let stringHTML = '';
 
-let hello = new Work("Find Your Hat (Node.js Game)",
-    "/images/works/8bjchl.gif",
-    "<p>This node.js game is an assignment of a school project of SCTP with Generation.sg and Temasek Poly. This JavaScript programming foundation assignment allows me to demonstrate my creativity and sense of beauty.</p>",
-    ["JavaScript"],
-    ["node.js"],
-    [{ replit: "https://replit.com/@Joshua-Ho-Gwok/Find-your-hat#138ee1e2-fda9-4683-9d2a-5e7ae201341a" },
-    { github: "https://github.com/Joshua-Ho-Gwok-Hin/EDU-SCTP-TEMASEK-POLY/tree/b04fe847439da296e9aa4a4549646502c4ff5f94/ASSESSMENT%20-%20JavaScript%20-%20Find%20Your%20Hat%20Game" },
-    { links: "" }]);
+    for (let i = 0; i < inputArray.length; i++) {
+        let title = inputArray[i]["title"];
+        let src = inputArray[i]["src"];
+        let descriptions = inputArray[i]["descriptions"];
+        let languages = inputArray[i]["languages"];
+        let skills = inputArray[i]["skills"];
+        let links = inputArray[i]["links"];
 
-works = [findYourHat, hello];
+        stringHTML += `
+            <article class="row mt-5">
+                <h2 class="py-3 text-info console-font">${title}</h2>
+                <section class="col-12 col-md-6 col-lg-4 border-right">
+                    <img src="${src}" alt="" class="w-100">
+                </section>
+                <section class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <h3 class="">Descriptions:</h3>
+                    <p>${descriptions}</p>
+                    <h4 class="">Languages:</h4>
+                    <ul>`;
 
-const populateworks = () => {
-    testingwork.innerHTML = `<h1 class="text-white">JS is working</h1>`;
+        for (let j = 0; j < languages.length; j++) {
+            stringHTML += `
+                        <li>${languages[j]}</li>`;
+        };
+
+        stringHTML += `
+                    </ul>
+                    <h4 class="">Skills:</h4>
+                    <ul>`;
+
+        for (let k = 0; k < skills.length; k++) {
+            stringHTML += `
+                        <li>${skills[k]}</li>`;
+        };
+
+        stringHTML += `
+                    </ul>
+                    <h4 class="">Demo Links:</h4>`;
+
+        for (let l = 0; l < links.length; l++) {
+            let linksObject = links[l];
+            for (let key in linksObject){
+           stringHTML += `
+                    <a href="${linksObject[key]}"
+                    target="_blank" class="btn btn-dark">${key}</a>`;
+            }
+        };
+
+        stringHTML += `
+                </section>
+            </article>`;
+    };
+
+    displayArray.innerHTML = stringHTML;
 }
 
-populateworks();
+populateworks(works);
 
