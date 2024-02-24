@@ -1,10 +1,10 @@
-class Work {
+export default class Work {
     title = "";
     src = "";
     descriptions = "";
     languages = [];
     skills = [];
-    links = [{ replit: "" }, { github: "" }, { link: "" }]
+    links = [{ replit: "" }, { github: "" }, { link: "" }];
 
     constructor(title, src, descriptions, languages, skills, links) {
         this.title = title;
@@ -15,5 +15,3 @@ class Work {
         this.links = links;
     }
 }
-
-export default Work;
