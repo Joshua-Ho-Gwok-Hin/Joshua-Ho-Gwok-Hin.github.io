@@ -22,13 +22,13 @@ const populateworks = (inputArray) => {
                 </section>
                 <section class="col-12 col-md-6 col-lg-6 col-xl-4">
                     <h3 class="">Descriptions:</h3>
-                    <p>${descriptions}</p>
+                    <p class="text-justify text-white">${descriptions}</p>
                     <h4 class="">Languages:</h4>
                     <ul class="list-unstyled">`;
 
         for (let j = 0; j < languages.length; j++) {
             stringHTML += `
-                        <li class="d-inline pe-2">${languages[j]}</li>`;
+                        <li class="d-inline pe-2 text-white">${languages[j]}</li>`;
         };
 
         stringHTML += `
@@ -38,7 +38,7 @@ const populateworks = (inputArray) => {
 
         for (let k = 0; k < skills.length; k++) {
             stringHTML += `
-                        <li class="d-inline pe-2">${skills[k]}</li>`;
+                        <li class="d-inline pe-2 text-white">${skills[k]}</li>`;
         };
 
         stringHTML += `

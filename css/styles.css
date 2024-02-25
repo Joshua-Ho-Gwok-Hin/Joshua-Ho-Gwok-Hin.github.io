@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -15,8 +17,13 @@ body {
     font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
 }
 
-h1, h2, h3, h4, h5, h6,
- p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: rgba(255, 255, 255, 0.6);
     font-family: roboto;
 }
@@ -26,7 +33,7 @@ h1, h2, h3, h4, h5, h6,
 /****************************/
 
 .nav-link-text {
-    color: rgba(13, 202, 240, 0.9) !important;  
+    color: rgba(13, 202, 240, 0.9) !important;
 }
 
 .nav-link-text:hover {
@@ -183,7 +190,9 @@ footer {
 
 .bi-filetype-sql {
     color: mediumseagreen;
-};
+}
+
+;
 
 .side-links li a:link {
     text-decoration: none;
@@ -199,4 +208,9 @@ footer {
     background-image: url(/images/diamond_swatch_dark.png);
     background-size: 20px;
     background-repeat: repeat;
+}
+
+.text-justify {
+    text-align: justify;
+    padding-right: 10px;
 }
